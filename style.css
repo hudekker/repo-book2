@@ -1,0 +1,133 @@
+:root {
+  --dracula-dark-black: #282a36;
+  --dracula-black: #44475a;
+  --dracula-white: #f8f8f2;
+  --dracula-dark-blue: #6272a4;
+  --dracula-light-blue: #8be9fd;
+  --dracula-light-blue-rgb-nums: 139, 233, 253;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+  --violet: violet;
+  --spring-green: #00ff7f;
+
+  --width-lg: 700px;
+  --width-sm: 350px;
+  --square-lg: 100px;
+  --square-sm: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.no-display {
+  display: none;
+}
+
+body {
+  padding: 2.5em;
+}
+
+#title-search {
+  color: var(--dracula-yellow);
+}
+#title-search.gist {
+  color: var(--dracula-light-blue);
+}
+
+.gist-search {
+  display: flex;
+}
+
+#btn-search {
+  margin-right: 20px;
+}
+#btn-github,
+#btn-gist {
+  padding: 10px;
+  width: 60px;
+  border: none;
+}
+
+#btn-github.on {
+  background-color: var(--dracula-yellow);
+  color: var(--dracula-dark-black);
+}
+
+#btn-gist.on {
+  background-color: var(--dracula-light-blue);
+  color: var(--dracula-dark-black);
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.github-limits {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.tbl-search ul {
+  list-style-type: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.tbl-search th {
+  cursor: pointer;
+  position: relative;
+}
+
+.tbl-search .sorted-desc:after {
+  position: absolute;
+  right: 0.5em;
+  content: "\25BC";
+  font-size: 0.8em;
+}
+
+.tbl-search .sorted-asc:after {
+  position: absolute;
+  right: 0.5em;
+  content: "\25B2";
+  font-size: 0.8em;
+}
+
+.github-logo {
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+td,
+th {
+  /* min-width: 75px; */
+  min-width: 100px;
+  font-size: 0.9em;
+  word-break: break-word;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 467px) {
+  .markdown-body {
+    padding: 10px;
+  }
+
+  td,
+  th {
+    min-width: 70px;
+    font-size: 0.8em;
+  }
+}
